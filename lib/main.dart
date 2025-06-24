@@ -25,6 +25,7 @@ class MyApp extends StatelessWidget {
         splitScreenMode: true,
         builder: (context, child) {
           return MaterialApp(
+            debugShowCheckedModeBanner: false,
         home: BlocProvider(
           create: (_) => getIt<ProductsCubit>()..fetchProducts(),
           child:  ProductsPage(),
